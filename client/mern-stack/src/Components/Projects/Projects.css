@@ -1,0 +1,19 @@
+:root{
+    --main-color: #9e9ea4;
+    --bg-color: #263043; 
+}
+.sidebar{
+    display: flex;
+    gap: 20px;
+}
+.project-content{
+    margin-top: 10px;
+    background: var(--main-color);
+    flex: 1;
+    color: var(--bg-color);
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}  

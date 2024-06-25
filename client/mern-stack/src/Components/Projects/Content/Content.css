@@ -1,0 +1,246 @@
+:root{
+    --main-color: #9e9ea4;
+    --bg-color: #263043; 
+}
+.content{
+    width: 75%;
+}
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-title{
+    color: var(--bg-color);
+}
+.header-activity{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search-box{
+    background: #ccc;
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: flex;
+    color: var(--bg-color);
+    align-items: center;
+}
+.search-box input{
+     border: none;
+     outline: none;
+     background: transparent;
+     padding: 5px;
+}
+.search-box .icon{
+    color: #9e9ea4;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.5s ease-in-out;
+}
+.notify{
+    background: #ccc;
+    padding: 12px;
+    border-radius: 10px;
+    color: #9e9ea4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+.notify .icon{
+    font-size:20px;
+    transition: 0.5s ease-in-out;
+}
+.icon:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+/* Card */
+.project-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 2rem;
+}
+.project{
+    flex: 1;
+    background: #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.5s ease-in-out;
+}
+.project:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+.project-cover{
+    background: #ccc;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;  
+    border-radius: 20px;
+}
+.project-title{
+    background: #b8b8bb;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: var(--bg-color);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+.project-title .icon{
+    font-size: 70px;
+}
+.project-title a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 10px;
+    background: var(--bg-color);
+    border-radius: 20px;
+}
+.project-title a:hover{
+    cursor: pointer;
+}
+
+
+/* Project list */
+.list-header {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-between;
+}
+/* .list-header h2{
+    color: var(--bg-color);
+} */
+.list-header select {
+    padding: 5px 8px;
+    border: 2px solid var(--bg-color);
+    color: #263043;
+    border-radius: 10px;
+}
+.projectlist-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.list{
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-in-out;
+}
+.list-link{
+    text-decoration: none;
+    font-size: larger;
+    color: var(--bg-color);
+}
+.project-detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--bg-color);
+}
+.project-detail img{
+    width: 50px;
+    background: #ccc;
+    border-radius: 40%;
+}
+.list:hover{
+    background: #ccc;
+    border-radius: 10px;
+
+}
+.edit-project{
+    color: white;
+    background: green;
+    margin-right: 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.delete-project{
+    color: white;
+    background: red;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.edit-project:hover{
+    padding: 15px;
+    
+}
+.delete-project:hover{
+    padding: 15px;
+}
+/* PROJECT DETAILS */
+.project-deets-container {
+    width: 100%;
+    height: 1000px;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: #263043;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .project-details-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+
+  }
+  .project-deets{
+   
+    width: 100%;
+    background: #ccc;
+    padding: 30px;
+    justify-content: center;
+  }
+  .project-deets-aside{
+    display: flex;
+    width: auto;
+    background: var(--bg-color);
+    color: #9e9ea4;
+    box-shadow: 0 0 100px var(--main-color);
+   
+    justify-content: center;
+  
+    padding: 30px;
+  }
+.edit-form{
+    width: auto;
+    border: 1px solid var(--main-color);
+    padding: 10px;
+    text-align: center;
+    height: 200px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+
+.loading-div, .error-div{
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+    margin-top: 100px;
+} 
+
+.project-deets{
+    width: 100% -  600px;
+}

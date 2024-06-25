@@ -1,0 +1,42 @@
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 120px;
+    top: 0;
+    font-weight: 700;
+    color: white;
+    border-bottom: 3px solid white;
+   
+}
+.nav-menu{
+    display: flex ;
+    gap: 2rem;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+}
+@media (max-width:1000px) {
+    body{
+      justify-content: center;
+      align-items: center;
+      font-size: smaller;
+    }
+    .nav{
+        margin-left: 0;
+        gap: 20px;
+        position: fixed;
+        left: 10px;
+    }
+    .nav-menu{
+        display: flex;
+        font-size: 13px;
+        
+    }    
+}
+

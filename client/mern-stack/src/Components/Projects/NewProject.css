@@ -1,0 +1,89 @@
+:root{
+    --main-color: #9e9ea4;
+    --bg-color: #263043; 
+    --second-bg-color: #dde6ed;
+}
+.new-project-container{
+    width: 60%;
+    margin-left: 20%;
+}
+.navbar{
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    background: var(--bg-color);
+    color: var(--main-color);
+    margin-top: 40px;
+    padding: 20px;
+}
+.project-title{
+    border-radius: 10%;
+}
+.project-title label{
+    padding: 20px;
+    font-size: larger;
+    font-weight: 700;
+}
+.project-title input{
+    border: none;
+    font-size: larger;
+}
+.title{
+    background: var(--second-bg-color);
+    width: 40%;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    border-radius: 10%;
+    color: var(--bg-color);
+    transition: .5s ease-in-out;
+  
+}
+.description{
+    background: var(--second-bg-color);
+    width: 70%;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    border-radius: 10%;
+    font-size: larger;
+    transition: .5s ease-in-out;
+}
+.status{
+    width: auto;
+    background: var(--bg-color);
+    color: #9e9ea4;
+    text-align: center;
+    border-radius: 10%;
+    transition: .5s ease-in-out;
+}
+.startDate, .endDate{
+    border-radius: 10%;
+    width: auto;
+    height: 35px;
+    padding: 5px;
+    background: var(--second-bg-color);
+    transition: .5s ease-in-out;
+}
+.title:hover, .description:hover, .status:hover, 
+.endDate:hover, .startDate:hover{
+    padding: 20px;
+    border: none;
+}
+
+.project-title:nth-of-type(odd){
+    background: var(--main-color);
+}
+.btn-submit{
+    width: 150px;
+   align-self: center;
+   border: 1px solid var(--main-color);
+   background: transparent;
+   color: var(--bg-color);
+   padding: 10px 10px;
+}
+.btn-submit:hover{
+    background: var(--bg-color);
+    color: var(--second-bg-color);
+    cursor: pointer;
+}

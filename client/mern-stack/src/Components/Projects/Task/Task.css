@@ -1,0 +1,58 @@
+:root{
+    --main-color: #9e9ea4;
+    --bg-color: #263043; 
+    --second-color: #ccc;
+}
+.add-task-container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.task-form{
+    height: auto;
+    width: 600px;
+    background-color: var(--second-color);
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    color: var(--bg-color);
+    padding: 20px;
+    box-shadow: 0 0 30px var(--second-color);
+}
+.task-form h1{
+    font-size: 30px;
+}
+.task-div{
+    align-content: center;
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--bg-color);
+    border-radius: 10px;
+    margin: 30px 0;
+    /* border: 1px solid var(--bg-color); */
+}
+.task-form input{
+    width: auto;
+    margin-left: 20px;
+    color: var(--bg-color);
+    font-size: 18px;
+    border-radius: 0%;
+    border: none;
+    padding: 10px;
+    background-color: #ccc;
+}
+.task-div label{
+    font-weight: 600;
+    font-size: 20px;
+}
+ 
+.task-form .submit{
+    padding: 10px 20px;
+    background: #263043;
+    color: var(--main-color);
+    border-radius: 20px;
+    font-size: medium;
+}
